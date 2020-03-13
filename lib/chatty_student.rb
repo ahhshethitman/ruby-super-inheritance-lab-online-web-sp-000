@@ -1,3 +1,4 @@
+require 'pry'
 class ChattyStudent < Student
   def hello
     super
@@ -6,5 +7,6 @@ class ChattyStudent < Student
 
   def raise_hand
     10.times {super}
+    binding.pry
   end
 end
